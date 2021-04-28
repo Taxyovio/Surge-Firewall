@@ -1,0 +1,1 @@
+This repository contains the configuration file for the [Surge](https://nssurge.com) app to block domains from the Steven Black’s unified [hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts).
