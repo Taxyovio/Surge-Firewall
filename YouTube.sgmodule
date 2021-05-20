@@ -1,5 +1,6 @@
 #!name=YouTube
-#!desc=YouTube videos removes ads. v20201226.01
+#!desc=YouTube ad removal. 
+#v20201226.01
 
 [Rule]
 URL-REGEX,^https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
