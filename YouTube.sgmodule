@@ -1,12 +1,13 @@
 #!name=YouTube
 #!desc=YouTube ad removal. 
-#v20201226.01
+#2021-1125
 
 [Rule]
 URL-REGEX,^https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
-URL-REGEX,^https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
+URL-REGEX,^https?:\/\/.+.youtube.com\/api\/stats,REJECT
 URL-REGEX,^https?:\/\/.+.youtube.com\/get_midroll_,REJECT
 URL-REGEX,^https?:\/\/.+.youtube.com\/pagead\/,REJECT
+URL-REGEX,^https?:\/\/.+.youtube.com\/pcs\/activeview,REJECT
 URL-REGEX,^https?:\/\/.+.youtube.com\/ptracking\?,REJECT
 URL-REGEX,^https?:\/\/.+.youtube.com\/_get_ads,REJECT
 URL-REGEX,^https?:\/\/premiumyva.appspot.com\/vmclickstoadvertisersite,REJECT
@@ -14,14 +15,15 @@ URL-REGEX,^https?:\/\/s0.2mdn.net\/ads\/,REJECT
 URL-REGEX,^https?:\/\/stats.tubemogul.com\/stats\/,REJECT
 URL-REGEX,^https?:\/\/youtubei.googleapis.com\/.+ad_break,REJECT
 URL-REGEX,^https?:\/\/youtubei.googleapis.com\/youtubei\/.+(ad|log),REJECT
-URL-REGEX,^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?adformat,REJECT
 URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/.+&oad,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/.+\/ctier\/(?!A),REJECT-TINYGIF
 
 [URL Rewrite]
+# This is NOT a typo
 ctier=[A-Z] citer=A 302
 
 [Script]
-YouTube = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+&(oad|ctier)=(?!A),script-path=https://raw.githubusercontent.com/Taxyovio/Surge-Firewall/main/YouTube.js
+YouTube = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+(\/|&)(oad|ctier)(\/|=)(?!A),script-path=https://raw.githubusercontent.com/Taxyovio/Surge-Firewall/main/YouTube.js
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, *.youtube.com, youtubei.googleapis.com
