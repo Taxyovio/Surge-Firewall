@@ -4,7 +4,8 @@
 
 [Rule]
 URL-REGEX,^https?:\/\/.+.googlevideo.com\/ptracking\?pltype=adhost,REJECT
-URL-REGEX,^https?:\/\/.+.youtube.com\/api\/stats,REJECT
+URL-REGEX,^https?:\/\/.+.youtube.com\/api\/stats\/ads,REJECT
+URL-REGEX,^https?:\/\/s\.youtube\.com\/api\/stats\/qoe\?(adformat|adcontext),REJECT
 URL-REGEX,^https?:\/\/.+.youtube.com\/get_midroll_,REJECT
 URL-REGEX,^https?:\/\/.+.youtube.com\/pagead\/,REJECT
 URL-REGEX,^https?:\/\/.+.youtube.com\/pcs\/activeview,REJECT
@@ -23,7 +24,7 @@ URL-REGEX,^https?:\/\/[\w-]+\.googlevideo\.com\/.+\/ctier\/(?!A),REJECT-TINYGIF
 ctier=[A-Z] citer=A 302
 
 [Script]
-YouTube = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+(\/|&)(oad|ctier)(\/|=)(?!A),script-path=https://raw.githubusercontent.com/Taxyovio/Surge-Firewall/main/YouTube.js
+YouTube = type=http-request,pattern=^https?:\/\/.+?\.googlevideo\.com\/.+(\/|&)(oad|ctier)(\/|=)(?!A),script-path=YouTube.js
 
 [MITM]
 hostname = %APPEND% *.googlevideo.com, *.youtube.com, youtubei.googleapis.com
