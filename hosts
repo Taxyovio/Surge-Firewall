@@ -13,20 +13,6 @@
 # ===============================================================
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # Custom host records are listed here.
 
 
@@ -248,7 +234,7 @@ ploy.batmobi.net
 api5.batmobil.net
 .beauty-tea.com
 www.beauty-tea.com
-
+0.0.0.0.beeglivesex.com
 cdn.beginads.com
 www.cdn.beginads.com
 rotator.beginads.com
@@ -958,9 +944,9 @@ segment.hotstar.com
 us-west-2.kinesis.hpanalytics.net
 .hpphhpph.com
 .hpyrdr.com
-
+0.0.0.0.hpyrdr.com
 creative.hpyrdr.com
-
+0.0.0.0.creative.hpyrdr.com
 bmy.hqoohoa.com
 .hrtya.com
 .i-sharecloud.com
@@ -129252,26 +129238,18 @@ www.ads345.com
 
 #<maybe-spy>
 #0.0.0.0 auto.search.msn.com  # Microsoft uses this server to redirect
-
-
 #0.0.0.0 sitefinder.verisign.com	# Verisign has joined the game 
 #0.0.0.0 sitefinder-idn.verisign.com	# of trying to hijack mistyped
 
-
-
 #0.0.0.0 s0.2mdn.net		# This may interfere with some streaming 
-
 #0.0.0.0 ad.doubleclick.net   # This may interefere with www.sears.com
-
 media.fastclick.net  # Likewise, this may interfere with some
 #0.0.0.0 ebay.doubleclick.net		# may interfere with ebay
 #0.0.0.0 google-analytics.com			# breaks some sites
 #0.0.0.0 ssl.google-analytics.com
 #0.0.0.0 www.google-analytics.l.google.com
 #0.0.0.0 stat.livejournal.com		# There are reports that this may mess 
-
 #0.0.0.0 stats.surfaid.ihost.com	# This has been known cause 
-
 #0.0.0.0 www.google-analytics.com		# breaks some sites
 #0.0.0.0 ads.imeem.com		# Seems to interfere with the functioning of imeem.com
 #</maybe-spy>
@@ -129303,8 +129281,6 @@ adapi.ragapa.com
 adelogs.adobe.com  #See http://www.theregister.co.uk/2014/10/07/adobe_digital_editions_4_caught_snooping_into_ebook_collections_of_users/
 .ademails.com
 adlog.com.com  # Used by Ziff Davis to serve
-
-
 admin.iovation.com
 .adpatrof.com
 ads.tiscali.it
@@ -138431,7 +138407,6 @@ www.yourfuckbook.com
 #<ecard-scam-sites>
 
 # malicious e-card -- these sites send out mass quantities of spam 
-
 123greetings.com  # contains one link to distributor of adware or spyware
 .2000greetings.com
 .celebwelove.com
@@ -138465,7 +138440,6 @@ www.laugh-mail.net
 #<wiki-spam-sites>
 
 # message board and wiki spam -- these sites are linked in 
-
 .21jewelry.com
 24x7.soliday.org
 .2site.com
